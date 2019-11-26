@@ -1,0 +1,9 @@
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\bin\Release\FileEncoderForMPT.exe.config
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\bin\Release\FileEncoderForMPT.exe
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\bin\Release\FileEncoderForMPT.pdb
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\obj\Release\FileEncoderForMPT.Form1.resources
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\obj\Release\FileEncoderForMPT.Properties.Resources.resources
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\obj\Release\FileEncoderForMPT.csproj.GenerateResource.cache
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\obj\Release\FileEncoderForMPT.csproj.CoreCompileInputs.cache
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\obj\Release\FileEncoderForMPT.exe
+C:\Users\Xterlo\source\repos\FileEncoderForMPT\obj\Release\FileEncoderForMPT.pdb
