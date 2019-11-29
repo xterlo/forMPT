@@ -36,11 +36,13 @@
             this.EncryptButton = new System.Windows.Forms.Button();
             this.DecryptButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
+            this.ApplyKeyButton = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // EncryptText
             // 
+            this.EncryptText.Enabled = false;
             this.EncryptText.Location = new System.Drawing.Point(18, 113);
             this.EncryptText.Multiline = true;
             this.EncryptText.Name = "EncryptText";
@@ -49,6 +51,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.ApplyKeyButton);
             this.groupBox2.Controls.Add(this.KeyTextBox);
             this.groupBox2.Controls.Add(this.KeyGen);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
@@ -70,13 +73,15 @@
             // 
             this.KeyGen.Location = new System.Drawing.Point(6, 42);
             this.KeyGen.Name = "KeyGen";
-            this.KeyGen.Size = new System.Drawing.Size(359, 47);
+            this.KeyGen.Size = new System.Drawing.Size(164, 47);
             this.KeyGen.TabIndex = 2;
-            this.KeyGen.Text = "Генерация ключа";
+            this.KeyGen.Text = "Сгенерировать ключ";
             this.KeyGen.UseVisualStyleBackColor = true;
+            this.KeyGen.Click += new System.EventHandler(this.KeyGen_Click);
             // 
             // DecryptText
             // 
+            this.DecryptText.Enabled = false;
             this.DecryptText.Location = new System.Drawing.Point(18, 293);
             this.DecryptText.Multiline = true;
             this.DecryptText.Name = "DecryptText";
@@ -85,6 +90,7 @@
             // 
             // EncryptButton
             // 
+            this.EncryptButton.Enabled = false;
             this.EncryptButton.Location = new System.Drawing.Point(18, 248);
             this.EncryptButton.Name = "EncryptButton";
             this.EncryptButton.Size = new System.Drawing.Size(164, 39);
@@ -95,12 +101,14 @@
             // 
             // DecryptButton
             // 
+            this.DecryptButton.Enabled = false;
             this.DecryptButton.Location = new System.Drawing.Point(203, 248);
             this.DecryptButton.Name = "DecryptButton";
             this.DecryptButton.Size = new System.Drawing.Size(174, 39);
             this.DecryptButton.TabIndex = 9;
             this.DecryptButton.Text = "Дешифровать";
             this.DecryptButton.UseVisualStyleBackColor = true;
+            this.DecryptButton.Click += new System.EventHandler(this.DecryptButton_Click);
             // 
             // backButton
             // 
@@ -113,6 +121,16 @@
             this.backButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // ApplyKeyButton
+            // 
+            this.ApplyKeyButton.Location = new System.Drawing.Point(191, 42);
+            this.ApplyKeyButton.Name = "ApplyKeyButton";
+            this.ApplyKeyButton.Size = new System.Drawing.Size(174, 47);
+            this.ApplyKeyButton.TabIndex = 3;
+            this.ApplyKeyButton.Text = "Применить";
+            this.ApplyKeyButton.UseVisualStyleBackColor = true;
+            this.ApplyKeyButton.Click += new System.EventHandler(this.ApplyKeyButton_Click);
             // 
             // TextEncoder
             // 
@@ -144,5 +162,6 @@
         private System.Windows.Forms.Button DecryptButton;
         private System.Windows.Forms.Button backButton;
         protected System.Windows.Forms.TextBox EncryptText;
+        private System.Windows.Forms.Button ApplyKeyButton;
     }
 }
